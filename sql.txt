@@ -1,0 +1,5 @@
+select messages.messageid, messages.senderid, messages.subject, people.email, bodies.body from messages, people, bodies 
+where messages.messageid=bodies.messageid and messages.senderid=people.personid and people.personid=8
+
+
+select * from recipients where messageid=1896
